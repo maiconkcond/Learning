@@ -1,3 +1,7 @@
+html {
+  height: 100%;
+}
+
 body{
 	height: 100%;
 	margin: 0px;
@@ -5,60 +9,46 @@ body{
 	font-weight: normal;
 }
 
-html {
-  height: 100%;
-}
-
-.container{
-	max-width: 1128px;
-   margin: 0 auto;
-   
-}
-
 img, picture {
    max-width: 100%;
 }
 
+
+.container{
+	max-width: 1128px;
+   margin: 0 auto;   
+}
+
+/* Estilizando o menu */
 .menu{
 	background-color: rgb(27,32,38);
 	height: 50px;
 	position: relative;
 }
-
 .menu img {
 	width: 100px;
 	height: 50px;
 }
-
 .menu ul {
 	list-style: none;
 	float: right;
 	margin: 0px;
-
 }
-
 .menu ul li {
 	display: inline;
 }
-
 .menu ul li:last-child{
 	margin-right: 100px;
 }
-
 .menu ul li a {
-	font-family: calibri;
 	display: inline-block;
 	text-decoration: none;
 	margin: 15px;
 	color: rgb(121,144,150);
 }
 
-/**
-#one, #two, #tree, #four{
-	height: 100%;
-	width: 100%;
-}**/
 
+/* Estilizando artigos da página*/
 #one{
 	background:rgba(255,77,77 ,1);
    	height: 100vh;
@@ -69,39 +59,79 @@ img, picture {
     background-repeat: no-repeat;
     z-index: 1;
  }
-
 #two{
 	background: #fff;
 	background-size: 100% 100%;
 }
-
-#tree{
+#three{
 	margin-top: 100px;
 	background: rgb(250,250,250);
 }
 #four{
 	background: rgb(0,113,191);
 }
+
+/* Estilizando itens da página ONE*/
+.content-left{
+	width: 46.404255319149%; 
+   	margin-right: 2.127659574468%; 
+	float: left;
+	font-family: calibri;
+	font-weight: normal;
+	margin-top: 20%;
+	color: #fff;
+}
+.content-left h1{
+	font-size: 3.5rem;
+	margin: 10px;
+}
+.content-left h5 {
+	margin: 10px;
+	font-size: 1.2rem;
+}
+.content-right {
+	margin-right: 0;
+	text-align: right;
+}
+
+.content-right img{
+	margin-top: 10%;
+	margin-bottom: 10%;
+		
+}
+
+/* Estilizando seta da página ONE*/
+.seta:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 100px;
+  width: 0; 
+  height: 0; 
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid rgba(255,77,77 ,1);
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+
+/* Estilizando itens da página TWO*/
 .art_sobre{
 	position: relative;
 	padding-top: 150px;
 	text-align: center;
 	color: rgb(137,145,168);
 	font-size: 1.5rem;
-
 }
-
-
 .art_sobre .imagens figure{
-  display:inline-block;
-  width: 26.404255319149%; 
-   margin-right: 2.127659574468%; 
+  	display:inline-block;
+  	width: 26.404255319149%; 
+   	margin-right: 2.127659574468%; 
 	float: left;
 	margin-bottom: 120px;
-
 }
-
-
 .art_sobre .imagens figure h3 {
 	margin: 10px;
 }
@@ -115,85 +145,26 @@ img, picture {
 	margin: 0 auto;
 	clear: both;
 }
-
 #sobreWeb h2{
 	margin-bottom: 20px;
 }
-
 #sobreWeb p {
 	font-size: 1.2rem;
 	margin-top: 0px;
 }
-
 #sobreWeb small{
 	font-size: 1rem;
 }
 
-.content-left{
-	width: 46.404255319149%; 
-   margin-right: 2.127659574468%; 
-	float: left;
-	font-family: calibri;
-	font-weight: normal;
-	margin-top: 20%;
-	color: #fff;
-}
 
-.content-left h1{
-	font-size: 3.5rem;
-	margin: 10px;
-}
-
-
-.content-left h5 {
-	margin: 10px;
-	font-size: 1.2rem;
-
-}
-
-.content-right {
-margin-right: 0;
-text-align: right;
-
-	
-}
-
-.content-right img{
-	margin-top: 10%;
-	margin-bottom: 10%;
-		
-}
-
-.seta:before {
-  content: "";
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 100px;
-  width: 0; 
-  height: 0; 
-
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 50px solid rgba(255,77,77 ,1);
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%);
-}
-
-
-
-
+/* Estilizando itens da página THREE*/
 .art_preco{
-
 	text-align: center;
 	padding: 80px 0px 150px 0px;
 	margin: 0 auto;
-           width: 100%;
-           height: auto;
+    width: 100%;
+    height: auto;
 }
-
-
-
 .art_preco table{
 	text-align: center;
 	margin: 0 auto;
@@ -201,24 +172,19 @@ text-align: right;
 	color: #fff;
 	width: 100%;
 }
-
 .art_preco table caption {
 	color: rgb(137,145,168);
 	font-size: 2.5rem;
 	margin-bottom: 0px;
 	text-align: left;
-
 }
-
 table tr th{
 	padding: 25px 0px 25px 0px;
 	width: 350px;
 }
-
 table tr th strong{
 	font-size: 2rem;
 }
-
 table tr th:nth-child(1){
 	background: rgb(255,75,30); 
 }
@@ -228,27 +194,21 @@ table tr th:nth-child(2){
 table tr th:nth-child(3){
 	background: rgb(253,200,0); 
 }
-
 table tr td{
 	padding: 20px
 }
-
 .html5{
 	background: rgb(255,101,31);
 }
-
 .css{
 	background: rgb(1,172,226);
 }
-
 .js{
 	background: rgb(255,224,1);
 }
-
 #buy_buttons td{
 	padding: 20px 0px 40px 0px;
 }
-
 table tr td a {
 	border: 2.5px solid #fff;
 	border-radius: 100px;
@@ -257,46 +217,29 @@ table tr td a {
 	text-decoration: none;
 	font-weight: bold;
 }
-
 table tr td a:hover{
 	background-color: #fff;
 }
-
 .html5 a:hover{
 	color: rgb(255,101,31);
 
 }
-
 .css a:hover{
 	color: rgb(1,172,226);
 }
-
 .js a:hover{
 	color: rgb(255,224,1);
 }
 
-/*table tr td a:nth-child(1):hover{
-	color: rgb(255,101,31);
-}
-table tr td a:nth-child(2):hover{
-	color: rgb(1,172,226);
-}
-table tr td a:nth-child(3):hover{
-	color: rgb(255,224,1);
-
-}*/
-
+/* Estilizando itens da página FOUR*/
 .art_contato{
 	padding: 80px 0px 80px 0px;
 	color: #fff;
-
 }
-
 .art_contato h2{
 	font-size: 2.5rem;
 	font-weight: normal;
 }
-
 .art_contato form input,textarea {
 	margin-bottom: 20px;
 	display: block;
@@ -304,10 +247,23 @@ table tr td a:nth-child(3):hover{
 	height: 30px;
 	background: rgb(0,101,171);
 	border-width: 0px 0px 1px 0px;
-	padding-left: 10px;
-	
+	padding-left: 10px;	
 }
-
+.art_contato form textarea{
+	height: 200px;
+}
+.art_contato form a{
+	border: 2px solid #fff;
+	border-radius: 100px;
+	padding: 10px 30px 10px 30px;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+}
+.art_contato form a:hover{
+	color: rgb(0,113,191);
+	background-color: #fff;
+}
 /* Alterando a cor da propriedade placeholder para cada navegador */
 ::-webkit-input-placeholder { 
     color: rgb(97,154,207);
@@ -322,28 +278,28 @@ table tr td a:nth-child(3):hover{
    color: rgb(97,154,207);
 }
 
-.art_contato form textarea{
-	height: 200px;
-}
 
-.art_contato form a{
-	border: 2px solid #fff;
-	border-radius: 100px;
-	padding: 10px 30px 10px 30px;
-	color: #fff;
-	text-decoration: none;
-	font-weight: bold;
-}
-
-.art_contato form a:hover{
-	color: rgb(0,113,191);
-	background-color: #fff;
-}
-
+/* Estilizando Rodapé*/
 footer{
 	background-color: rgb(27,32,38);
 	position: relative;
-
+}
+.rodape{
+	width: 100%;
+	height: auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	z-index: 1;
+}
+.rodape img{
+	width: 100px;
+	height: 50px;
+	line-height: 100px;
+}
+.rodape span{
+	float: right;
+	padding: 10px;
+	color: rgb(137,145,168);
 }
 
 footer a {
@@ -357,28 +313,4 @@ footer a {
 	padding: 10px 20px 5px 20px;
 	color: #fff;
 	font-weight: normal;
-
-}
-
-.rodape{
-	width: 100%;
-	height: auto;
-	padding-top: 30px;
-	padding-bottom: 30px;
-	z-index: 1;
-
-}
-.rodape img{
-	width: 100px;
-	height: 50px;
-	line-height: 100px;
-
-}
-
-
-
-.rodape span{
-	float: right;
-	padding: 10px;
-	color: rgb(137,145,168);
 }
