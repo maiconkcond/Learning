@@ -10,59 +10,141 @@
 <body>
 	<nav>
 		<div class="menu">
-			<img src="img/senai-logo.svg">
-			<ul>
-				<!--<li></li>-->
-				<li><a href="#">Inicio</a></li>
-				<li><a href="#">Sobre</a></li>
-				<li><a href="#">Preços</a></li>
-				<li><a href="#">Contato</a></li>
-			</ul>
+			<div class="container">
+				<img src="img/senai-logo.svg">
+				<ul>
+					<li><a href="#one">Inicio</a></li>
+					<li><a href="#two">Sobre</a></li>
+					<li><a href="#tree">Preços</a></li>
+					<li><a href="#four">Contato</a></li>
+				</ul>
+			</div>
 		</div>
 	</nav>
 	<section>
 		<article id="one">
-			<div class="art_html">
-				<div class="content-left">
-					<h1>Eu amo <b>HTML</b></h1>
-					<h5>&#10004; É fácil de aprender</h5>
-					<h5>&#10004; Dá pra fazer um site bonitão</h5>
-					<h5>&#10004; Dá até pra fazer aquele site pro meu tio vive me pedindo</h5>
-					<h5>&#10004; Cadê os lorem ipsum?</h5>
-				</div>
-				<div class="content-right">
-					<img src="img/html5.png">
-				</div>
+			<div class="container">
+				<div class="art_html">
+					<div class="content-left">
+						<h1>Eu amo <b>HTML</b></h1>
+						<h5>&#10004; É fácil de aprender</h5>
+						<h5>&#10004; Dá pra fazer um site bonitão</h5>
+						<h5>&#10004; Dá até pra fazer aquele site pro meu tio vive me pedindo</h5>
+						<h5>&#10004; Cadê os lorem ipsum?</h5>
+					</div>
+					<div class="content-right">
+						<img src="img/html5.png">
+					</div>
+				</div>	
 			</div>
 		</article>
+		<div class="container">
+			<span class="seta"></span>
+		</div>
 		<article id="two">
-			<div class="art_sobre">
-				<figure>
-				<img src="img/html5.png">
-					<figcaption><h3>HTML</h3>
-					<p>Hypertext Markup Language</p>
-					</figcaption>
-				</figure>
-				<figure>
-				<img src="img/css3.png">
-					<figcaption><h3>CSS</h3>
-					<p>Cascading Style Sheet</p>
-					</figcaption>
-				</figure>
-				<figure>
-				<img src="img/js.png">
-					<figcaption><h3>JS</h3>
-					<p>JavaScript</p>
-					</figcaption>
-				</figure>
-				<div id="sobreWeb">
-					<h2>Sobre a Web</h2>
-					<p>Hoje a internet é baseada basicamente em código HTML, onde nós podemos mostrar imagens, vídeos, audios e principalmente textos. Os links são o meio pelo qual nós organizamos toda a informação na internet, referenciando informações de um site para outro. Os links organizam, de certa forma, todos os websites da internet, sempre cruzando um termo com uma fonte de informação relacionada áquele termo.</p>
-					<p>Nós podemos quebrar a internet em duas partes especificas: nós temos a parte onde nós enxergamos, que basicamente é baseada em HTML, CSS e JS. É onde seres humanos interagem com nosso produto e nosso site.</p>
-					<small>fonte: <strong>Tableless</strong></small>
+			<div class="container">
+				<div class="art_sobre">
+					<div class="imagens">
+						<figure>
+							<img src="img/html5.png">
+							<figcaption>
+								<h3>HTML</h3>
+								<p>Hypertext Markup Language</p>
+							</figcaption>
+						</figure>
+						<figure>
+							<img src="img/css3.png">
+							<figcaption>
+								<h3>CSS</h3>
+								<p>Cascading Style Sheet</p>
+							</figcaption>
+						</figure>
+						<figure>
+						<img src="img/js.png">
+							<figcaption>
+								<h3>JS</h3>
+								<p>JavaScript</p>
+							</figcaption>
+						</figure>
+					</div>
+					<div id="sobreWeb">
+						<h2>Sobre a Web</h2>
+						<p>Hoje a internet é baseada basicamente em código HTML, onde nós podemos mostrar imagens, vídeos, audios e principalmente textos. Os links são o meio pelo qual nós organizamos toda a informação na internet, referenciando informações de um site para outro. Os links organizam, de certa forma, todos os websites da internet, sempre cruzando um termo com uma fonte de informação relacionada áquele termo.</p>
+						<p>Nós podemos quebrar a internet em duas partes especificas: nós temos a parte onde nós enxergamos, que basicamente é baseada em HTML, CSS e JS. É onde seres humanos interagem com nosso produto e nosso site.</p>
+						<small>fonte: <strong>Tableless</strong></small>
+					</div>
 				</div>
 			</div>
 		</article>
+		<article id="tree">
+			<div class="container">
+				<div class="art_preco">
+					<table>
+						<caption>Preços dos cursos</caption>
+						<tr>
+							<th><strong>HTML</strong></br> 20 horas</th>
+							<th><strong>CSS</strong></br> 20 horas</th>
+							<th><strong>JS</strong></br> 20 horas</th>
+						</tr>
+						<tr>
+							<td class="html5">Introdução</td>
+							<td class="css">Seletores</td>
+							<td class="js">Variáveis</td>
+						</tr>
+						<tr>
+							<td class="html5">Tags básicas</td>
+							<td class="css">Cores(HEX,RGB,RGBA)</td>
+							<td class="js">Operadores lógicos</td>
+						</tr>
+						<tr>
+							<td class="html5">Semântica</td>
+							<td class="css">Propriedades</td>
+							<td class="js">Estruturas de decisão</td>
+						</tr>
+						<tr>
+							<td class="html5">Meta tags</td>
+							<td class="css">Pseudo seletores</td>
+							<td class="js">Estruturas de repetição</td>
+						</tr>
+						<tr>
+							<td class="html5">Melhorando seu ranking no Google</td>
+							<td class="css">CSS Compilado(Sass,Less, Stylus)</td>
+							<td class="js">Funções</td>
+						</tr>
+						<tr id="buy_buttons">
+							<td class="html5"><a href="#">Comprar</a></td>
+							<td class="css"><a href="#">Comprar</a></td>
+							<td class="js"><a href="#">Comprar</a></td>
+						</tr>
+					</table>
+				</div>
+			</div>	
+		</article>
+		<article id="four">
+			<div class="container">
+				<div class="art_contato">
+					<h2>Entre em contato</h2>
+					<form>
+						<label for="nome">NOME</label>
+						<input type="text" name="nome" placeholder="Nome">
+						<label for="email">EMAIL</label>
+						<input type="text" name="email" placeholder="Email">
+						<label for="mensagem">MENSAGEM</label>
+						<textarea placeholder="Mensagem" ></textarea>
+						<a href="#" type="button" name="enviar">Enviar</a>
+					</form>
+				</div>
+			</div>
+		</article>
+		<footer>
+			<div class="container">
+				<div class="rodape">
+					<img src="img/senai-logo.svg">
+					<span>Feito com o ❤</span>
+				</div>
+			</div>
+			<a href="#">&#94;</a>
+		</footer>
 	</section>
 </body>
 </html>
